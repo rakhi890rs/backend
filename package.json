@@ -1,5 +1,25 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A Node.js backend setup for learning and building server-side applications. Includes basic server creation, routing, and API handling using Express (or native HTTP module).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakhi890rs/backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rakhi890rs/backend/issues"
+  },
+  "homepage": "https://github.com/rakhi890rs/backend#readme",
   "dependencies": {
-    "cat-me": "^1.0.3"
+    "express": "^5.1.0"
   }
 }
