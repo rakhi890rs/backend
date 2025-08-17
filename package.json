@@ -21,5 +21,6 @@
   "homepage": "https://github.com/rakhi890rs/backend#readme",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }

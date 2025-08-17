@@ -4,3 +4,8 @@ const noteSchema = new mongoose.Schema({
     title:String,
     content:String
 })
+
+
+const noteModel = mongoose.model("Note", noteSchema);
+
+module.exports = noteModel;

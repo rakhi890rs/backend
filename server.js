@@ -1,24 +1,22 @@
-// const http = require("http")
-// const server = http.createServer((req,res)=>{
-//     res.end("hello from server")
-// })
+const express = require("express");
+const app = express(); // server created
 
-// server.listen(3000,()=>{
-//     console.log("Server is running on port 3000")
-// })
+app.get('/', (req, res) => {
+  res.send("Main Page Loaded");
+});
 
+app.get('/home', (req, res) => {
+  res.send("Welcome to the home page");
+});
 
+app.get('/about', (req, res) => {
+  res.send("Welcome to the about page");
+});
 
-// using express js
-// const express = require("express");
-// const app = express(); // server created
+app.get('/rakhi', (req, res) => {
+  res.send("Welcome pyari Rakhi");
+});
 
-// // define a simple route
-// app.get("/", (req, res) => {
-//   res.send("Hello from Express server!");
-// });
-
-// // start the server
-// app.listen(3000, () => {
-//   console.log("Server is running on http://localhost:3000");
-// });
+app.listen(5002, () => {
+  console.log("Server is running on http://localhost:5002");
+});
