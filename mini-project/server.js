@@ -16,7 +16,7 @@ app.post('/notes', (req, res) => {
     console.log(req.body);
     notes.push(req.body);
     res.json({
-        message: "note created successfully"
+        message: "note created re"
     });
 });
 app.delete('/notes/:index',(req,res)=>{
